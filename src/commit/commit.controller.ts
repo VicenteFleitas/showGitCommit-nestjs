@@ -9,7 +9,7 @@ export class CommitController {
         let commit = null;
         try {
             let commitService = new CommitService();
-            commit = await commitService.getCommit('https://api.github.com/repos/vicentefleitas/canvas-platform-game/commits');
+            commit = await commitService.getCommit('https://api.github.com/repos/vicentefleitas/showGitCommit-nestjs/commits');
         } catch (e) {
             console.log("Error: ", e);
         }
